@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+
+</head>
+<body>
+    <header height="100px"><nav class="nav">
+        <div class="nav-logo" onclick="home()">
+            <p>Pixel</P>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#" onclick="home()" class="link" id="home1">Home</a></li>
+                <li><a href="#" class="link">Themes</a></li>
+                <li><a href="#" class="link">Overview</a></li>
+                <li><a href="#" onclick="about()" class="link" id="about">About</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn" id="registerBtn" onclick="openlogin()">Login</button>
+        </div>
+    </nav></header>
+    <main></div>
+    <div class="wrapper" id="home">
+            <div class="rest1">
+                <h1>365 Days in Pixels: Capturing Life's Spectrum</h1>
+                <p>"A Visual Journey Through Every Emotion, Moment, and Memory".</p>
+            </div>
+            <div class="rest2">
+                <img src="pixel.jpg" alt="pic">
+            </div>
+    </div>
+    <div class="wrapper" id="about">
+        <div class="content">
+            <div class="about-section">
+                <p>
+                    <b>Year in Pixels</b>, where every day is a canvas of emotions painted in vibrant hues. We believe in the power of expression, and our project captures the essence of each 
+                    day through the colors of mood. Whether it's a splash of joy, a brushstroke of tranquility, or a swirl of introspection, our platform transforms daily experiences into a captivating visual narrative.
+                    Here, we celebrate the uniqueness of human emotions and the diverse spectrum they create. Through our innovative approach, we invite you to explore the intricate 
+                    tapestry of feelings that shape our lives. Join us on this colorful journey as we blend art and emotion to reflect the kaleidoscope of human experience.
+                    Discover the beauty in the everyday, find connection through shared emotions, and let your mood paint the canvas of time with us at <b>Year in Pixels</b>.</p>
+            </div>
+        </div>
+    </div>
+</main>
+    <script>
+        var y= document.getElementById("home");
+        var x= document.getElementById("about");
+        var z= document.getElementById("home1");
+        function home(){
+            x.style.opacity=0;
+            y.style.opacity=1;
+            z.className="link active";
+        }
+        function about(){
+            x.className="link active";
+            y.style.opacity=0;
+            x.style.opacity=1;
+        }
+        
+        function openlogin(){
+            window.location.href='login.html';
+        }
+    </script>
+</body>
+</html>
