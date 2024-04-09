@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="home.css">
-
 </head>
 <body>
-    <header height="100px"><nav class="nav">
+    <header height="100px">
+        <nav class="nav">
         <div class="nav-logo" onclick="home()">
             <p>Pixel</P>
         </div>
         <div class="nav-menu" id="navMenu">
             <ul>
-                <li><a href="#" onclick="home()" class="link" id="home1">Home</a></li>
+                <li><a href="#" onclick="home()" class="link active" id="home1">Home</a></li>
                 <li><a href="#" class="link">Themes</a></li>
                 <li><a href="#" class="link">Overview</a></li>
-                <li><a href="#" onclick="about()" class="link" id="about">About</a></li>
+                <li><a href="#" onclick="about()" class="link">About</a></li>
             </ul>
         </div>
         <div class="nav-button">
@@ -51,19 +51,8 @@
         var y= document.getElementById("home");
         var x= document.getElementById("about");
         var z= document.getElementById("home1");
-        function home(){
-            x.style.opacity=0;
-            y.style.opacity=1;
-            z.className="link active";
-        }
-        function about(){
-            x.className="link active";
-            y.style.opacity=0;
-            x.style.opacity=1;
-        }
-        
         function openlogin(){
-            window.location.href='login.html';
+            window.location.href="login.html";
         }
     </script>
 </body>
